@@ -33,18 +33,33 @@ export function Credits() {
               <dt>Autor</dt>
               <dd>{siteConfig.modelCredit.author}</dd>
             </div>
+
             <div>
               <dt>Licencia</dt>
-              <dd>{siteConfig.modelCredit.license}</dd>
+              <dd>
+                <a
+                  href={siteConfig.modelCredit.licenseUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {siteConfig.modelCredit.license} ↗
+                </a>
+              </dd>
             </div>
+
             <div>
               <dt>Origen</dt>
-              <dd>{siteConfig.modelCredit.sourceUrl}</dd>
+              <dd>
+                <a
+                  href={siteConfig.modelCredit.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver modelo original en Sketchfab ↗
+                </a>
+              </dd>
             </div>
           </dl>
-          <p className="credit-reminder">
-            Sustituye estos placeholders únicamente cuando hayas confirmado el autor, la licencia y la fuente original del modelo definitivo.
-          </p>
         </article>
       </div>
     </section>

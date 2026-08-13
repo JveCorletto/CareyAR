@@ -156,13 +156,15 @@ export function TurtleViewer() {
                 alt={`Modelo 3D interactivo de ${siteConfig.speciesName}`}
                 ar
                 ar-modes="webxr scene-viewer quick-look"
-                camera-controls
+                camera-controls autoplay
                 auto-rotate={!reducedMotion}
                 auto-rotate-delay="2500"
                 rotation-per-second="18deg"
                 loading="eager"
                 reveal="auto"
                 shadow-intensity="0.7"
+                tone-mapping="neutral"
+                exposure="1"
                 interaction-prompt="auto"
                 className="model-viewer"
               >
@@ -236,10 +238,6 @@ export function TurtleViewer() {
             {arMessage && <p>{arMessage}</p>}
           </div>
         </div>
-
-        <p className="viewer-note">
-          <strong>Nota de desarrollo:</strong> los hotspots usan coordenadas provisionales y deberán calibrarse cuando se añada el modelo GLB definitivo.
-        </p>
       </div>
     </section>
   );

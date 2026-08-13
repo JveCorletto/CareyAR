@@ -10,9 +10,10 @@ export const siteConfig = {
   optionalIosModelPath: "/models/tortuga-carey.usdz",
   publicUrl: "[Agregar URL pública de producción]",
   modelCredit: {
-    name: "[Agregar nombre del modelo]",
-    author: "[Agregar autor]",
-    license: "[Agregar licencia]",
-    sourceUrl: "[Agregar URL de origen]",
+    name: "Model 50A - Hawksbill Sea Turtle",
+    author: "DigitalLife3D",
+    license: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+    sourceUrl: "https://skfb.ly/oyxDD",
+    licenseUrl: "https://creativecommons.org/licenses/by-nc/4.0/",
   },
 } as const;
