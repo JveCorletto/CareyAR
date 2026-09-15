@@ -4,7 +4,7 @@ CareyAR es una aplicación web educativa, Mobile First y frontend-only para una 
 
 La aplicación permite consultar información educativa, explorar un modelo 3D cuando esté disponible, utilizar hotspots anatómicos, intentar abrir realidad aumentada en dispositivos compatibles y completar un mini quiz.
 
-El proyecto está preparado para funcionar **aunque todavía no exista el archivo GLB**. En ese estado muestra un placeholder y mantiene disponible todo el contenido educativo y el quiz.
+El repositorio actual ya incluye el archivo GLB y el poster utilizados por CareyAR. La aplicación conserva además el fallback para que, si el GLB se elimina, cambia de ruta o falla durante la carga, aparezca un placeholder y el contenido educativo y el quiz sigan disponibles.
 
 ## Tecnologías
 
@@ -46,7 +46,7 @@ npm run typecheck
 
 ## Modelo 3D
 
-El modelo real debe colocarse en:
+El modelo 3D actual está ubicado en:
 
 ```text
 public/models/tortuga-carey.glb
@@ -58,7 +58,7 @@ La ruta pública usada por la aplicación es:
 /models/tortuga-carey.glb
 ```
 
-No es necesario cambiar código al añadir el archivo.
+No es necesario cambiar código mientras se conserve ese nombre y esa ruta. Si sustituyes el modelo por otro archivo, reemplaza el GLB manteniendo la misma ruta o actualiza `src/config/site.ts`.
 
 Mientras el GLB no exista o falle durante la carga, el visor mostrará:
 
@@ -75,15 +75,15 @@ El resto de la web seguirá funcionando normalmente.
 - Verificar escala, orientación y origen antes de AR.
 - Confirmar licencia y atribución.
 
-## Poster opcional
+## Poster del modelo
 
-Puedes añadir:
+El poster actual está ubicado en:
 
 ```text
 public/images/turtle-poster.webp
 ```
 
-Si no existe, el área del visor mantiene un fondo CSS y no rompe el layout.
+Si se elimina o no puede cargarse, el área del visor mantiene un fondo CSS y no rompe el layout.
 
 ## Hotspots
 
@@ -99,7 +99,7 @@ Incluyen:
 - Pico
 - Aletas
 
-Los campos `position` y `normal` incluidos actualmente son **coordenadas placeholder**. Deben ajustarse después de colocar y congelar el modelo definitivo.
+Los campos `position` y `normal` actuales fueron calibrados para el GLB incluido en el repositorio. Si sustituyes el modelo 3D, deberás volver a calibrarlos.
 
 Ejemplo de estructura:
 
@@ -108,13 +108,13 @@ Ejemplo de estructura:
   id: "caparazon",
   title: "Caparazón",
   description: "...",
-  position: "0m 0.18m 0m",
+  position: "0m 0.10m 0m",
   normal: "0m 1m 0m",
   ariaLabel: "Información sobre el caparazón"
 }
 ```
 
-No asumas que esas coordenadas coinciden con el modelo real.
+Estas coordenadas corresponden al modelo actual; no asumas que funcionarán correctamente con un modelo diferente.
 
 ## Información educativa
 
@@ -170,7 +170,7 @@ Actualmente se incluyen las organizaciones indicadas en la especificación:
 
 ## Créditos del modelo
 
-Los placeholders de créditos se editan en:
+Los créditos del modelo se editan en:
 
 ```text
 src/config/site.ts
@@ -180,14 +180,15 @@ Busca:
 
 ```ts
 modelCredit: {
-  name: "[Agregar nombre del modelo]",
-  author: "[Agregar autor]",
-  license: "[Agregar licencia]",
-  sourceUrl: "[Agregar URL de origen]"
+  name: "Model 50A - Hawksbill Sea Turtle",
+  author: "DigitalLife3D",
+  license: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+  sourceUrl: "https://skfb.ly/oyxDD",
+  licenseUrl: "https://creativecommons.org/licenses/by-nc/4.0/"
 }
 ```
 
-No reemplaces estos valores hasta comprobar la autoría y licencia reales.
+El repositorio actual ya contiene los créditos de DigitalLife3D y la licencia CC BY-NC 4.0. Si sustituyes el modelo, actualiza estos valores con la autoría, licencia y URL del nuevo recurso.
 
 ## Realidad aumentada
 

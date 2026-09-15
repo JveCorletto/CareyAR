@@ -5,10 +5,10 @@ export const educationalContent: EducationalSection[] = [
     id: "habitat",
     title: "Hábitat",
     icon: "🌊",
-    summary: "Una especie estrechamente vinculada a mares tropicales y arrecifes.",
+    summary: "Es una especie estrechamente vinculada a mares tropicales y arrecifes.",
     content: [
       "La tortuga carey vive en aguas tropicales y subtropicales de los principales océanos del mundo.",
-      "Es frecuente encontrarla asociada a arrecifes de coral y otros ambientes costeros donde puede encontrar refugio y alimento.",
+      "Es frecuente encontrarla asociada a arrecifes de coral y otros ambientes costeros como manglares, donde puede encontrar refugio y alimento.",
     ],
     sourceIds: ["noaa", "iucn", "smithsonian"],
   },
@@ -20,6 +20,7 @@ export const educationalContent: EducationalSection[] = [
     content: [
       "Las esponjas marinas forman una parte muy importante de su alimentación, aunque también puede consumir otros organismos del arrecife.",
       "Su pico estrecho y curvado le ayuda a extraer alimento de grietas y espacios difíciles de alcanzar.",
+      "Además, se alimenta de pasto marino en manglares de Bahía de Jiquilisco.",
     ],
     sourceIds: ["noaa", "smithsonian"],
   },
@@ -30,7 +31,7 @@ export const educationalContent: EducationalSection[] = [
     summary: "Su pico y su caparazón son dos de sus rasgos más reconocibles.",
     content: [
       "Posee un pico pronunciado y curvo que recuerda al de un halcón, característica que da origen a su nombre común en inglés.",
-      "Su caparazón presenta placas superpuestas y patrones de tonos claros y oscuros. Sus aletas están adaptadas para nadar y maniobrar en el medio marino.",
+      "Su caparazón presenta escudos superpuestos siguiendo el patrón de un techo de tejas; por eso se llaman imbricados y de ahí viene el nombre de la especie, imbricata. Sus aletas están adaptadas para nadar y maniobrar en el medio marino.",
     ],
     sourceIds: ["noaa", "smithsonian"],
   },
@@ -53,6 +54,7 @@ export const educationalContent: EducationalSection[] = [
     content: [
       "Su conservación requiere proteger playas y arrecifes, reducir la captura incidental y combatir el comercio ilegal de productos elaborados con caparazón de tortuga.",
       "También podemos contribuir evitando comprar productos derivados de tortugas marinas, reduciendo residuos y respetando las normas de protección de fauna silvestre.",
+      "No comprar artículos elaborados con plástico de un solo uso contribuye a evitar la acumulación de desechos sólidos en el hábitat de esta tortuga marina.",
     ],
     sourceIds: ["noaa", "iucn", "cites", "wwf"],
   },

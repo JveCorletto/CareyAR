@@ -10,12 +10,15 @@ type ModelViewerProps = DetailedHTMLProps<
   ar?: boolean;
   "ar-modes"?: string;
   "camera-controls"?: boolean;
+  autoplay?: boolean;
   "auto-rotate"?: boolean;
   "auto-rotate-delay"?: number | string;
   "rotation-per-second"?: string;
   loading?: "auto" | "lazy" | "eager";
   reveal?: "auto" | "interaction" | "manual";
   "shadow-intensity"?: number | string;
+  "tone-mapping"?: string;
+  exposure?: number | string;
   "camera-orbit"?: string;
   "interaction-prompt"?: "auto" | "when-focused" | "none";
 };

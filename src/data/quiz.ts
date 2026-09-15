@@ -4,7 +4,7 @@ export const quizQuestions: QuizQuestion[] = [
   {
     id: "q1",
     question: "¿Qué alimento es especialmente importante en la dieta de la tortuga carey?",
-    options: ["Esponjas marinas", "Semillas terrestres", "Pasto de montaña", "Insectos"],
+    options: ["Esponjas marinas", "Peces", "Pasto de montaña", "Crustáceos"],
     correctAnswer: 0,
     explanation:
       "Las esponjas marinas forman una parte muy importante de la dieta de la tortuga carey.",
@@ -13,31 +13,31 @@ export const quizQuestions: QuizQuestion[] = [
     id: "q2",
     question: "¿Para qué le resulta útil su pico estrecho y curvado?",
     options: [
-      "Para alcanzar alimento en grietas del arrecife",
+      "Para alimentarse de esponjas y arrancar organismos costrosos",
       "Para respirar bajo el agua",
       "Para producir sonidos fuertes",
-      "Para caminar sobre la arena",
+      "Para desplazarse por el océano",
     ],
     correctAnswer: 0,
     explanation:
-      "La forma de su pico le permite acceder a alimento que se encuentra en grietas y espacios difíciles del arrecife.",
+      "Su pico estrecho y curvado le ayuda a alimentarse de esponjas y a arrancar organismos costrosos adheridos al arrecife.",
   },
   {
     id: "q3",
-    question: "¿Con qué ambiente marino se asocia frecuentemente la tortuga carey?",
-    options: ["Arrecifes de coral", "Ríos de montaña", "Lagos de agua dulce", "Desiertos"],
+    question: "¿Con qué ambientes marinos se asocia frecuentemente la tortuga carey?",
+    options: ["Arrecifes y manglares", "Esteros y bahías", "Playas arenosas", "Islas rocosas"],
     correctAnswer: 0,
     explanation:
-      "La tortuga carey se encuentra con frecuencia en ambientes tropicales y está muy asociada a arrecifes de coral.",
+      "La tortuga carey se asocia frecuentemente con arrecifes de coral y también utiliza ambientes costeros como manglares.",
   },
   {
     id: "q4",
     question: "¿Cuál es una amenaza importante para la tortuga carey?",
     options: [
       "El comercio ilegal de su caparazón",
-      "La falta de nieve",
-      "La competencia con aves terrestres",
-      "La ausencia de árboles en alta montaña",
+      "Comercio de adultos",
+      "Ausencia de conchas en las playas",
+      "Competencia con moluscos",
     ],
     correctAnswer: 0,
     explanation:

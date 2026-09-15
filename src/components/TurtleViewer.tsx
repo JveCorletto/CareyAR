@@ -142,7 +142,7 @@ export function TurtleViewer() {
       <div className="shell">
         <div className="section-heading">
           <p className="eyebrow">Exploración 3D</p>
-          <h2 id="viewer-title">Conoce la tortuga de cerca</h2>
+          <h2 id="viewer-title">Conoce la Tortuga Carey de cerca</h2>
           <p>Cuando el modelo esté disponible podrás rotarlo, acercarlo y tocar sus puntos interactivos.</p>
         </div>
 

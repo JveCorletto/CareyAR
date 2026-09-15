@@ -10,7 +10,7 @@ export function HeroSection() {
           <p className="species-name">{siteConfig.speciesName}</p>
           <p className="scientific-name"><em>{siteConfig.scientificName}</em></p>
           <p className="hero-description">
-            Descubre cómo vive esta extraordinaria tortuga marina, explora sus características en 3D y pon a prueba lo aprendido con un mini quiz.
+            Descubre cómo vive esta interesante tortuga marina, explora sus características en 3D y pon a prueba lo aprendido con un mini quiz. Conoce sobre su biología y ecología.
           </p>
           <a className="button button-primary" href="#explorar">
             Explorar tortuga

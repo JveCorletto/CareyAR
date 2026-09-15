@@ -2,9 +2,9 @@ import type { Hotspot } from "@/types";
 
 /**
  * IMPORTANTE:
- * Las posiciones y normales siguientes son PLACEHOLDERS deliberados.
- * No representan coordenadas anatómicas reales del modelo definitivo.
- * Deben recalibrarse después de colocar public/models/tortuga-carey.glb.
+ * Estas posiciones y normales fueron calibradas para el modelo actual
+ * public/models/tortuga-carey.glb.
+ * Si se sustituye el modelo 3D, deberán revisarse y recalibrarse.
  */
 export const hotspots: Hotspot[] = [
   {
